@@ -1,0 +1,61 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #153677, #4e085f);
+}
+#kalkulator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    width: 380px;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid black 5px;
+}
+
+#kalkulator .form h2{
+    text-align: center;
+    margin: 10px 0px 5px;
+    font-size: 25px
+}
+
+#kalkulator .form .form-element{
+    margin: 15px 0px;
+}
+
+
+#kalkulator .form .form-element label{
+    font-size: 14px;
+}
+
+
+#kalkulator .form .form-element input[type="number"]{
+    margin-top: 5px;
+    display: block;
+    width: 95%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+    color: black;
+}
+
+#kalkulator .form-element #krm-button{
+    background-color: #ff5945;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+#kalkulator .form-element #krm-button:hover{
+    background-color: #fd331d;
+    transition: 0.2s;
+}
