@@ -17,6 +17,9 @@ body{
     border-radius: 10px;
     border: solid black 5px;
 }
+span{
+    color: #fd331d;
+}
 
 #kalkulator .form h2{
     text-align: center;
