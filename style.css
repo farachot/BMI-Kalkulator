@@ -5,6 +5,7 @@
 body{
     background: linear-gradient(135deg, #153677, #4e085f);
 }
+/* card kalkulator */
 #kalkulator{
     position: absolute;
     top: 50%;
@@ -32,7 +33,7 @@ body{
     font-size: 14px;
 }
 
-
+/* input */
 #kalkulator .form .form-element input[type="number"]{
     margin-top: 5px;
     display: block;
@@ -44,6 +45,7 @@ body{
     color: black;
 }
 
+/* tombol kalkulator */
 #kalkulator .form-element #krm-button{
     background-color: #ff5945;
     border-radius: 5px;

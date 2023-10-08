@@ -1,35 +1,32 @@
-
-    let button = document.getElementById("krm-button")
-    button.addEventListener("click", hitung)
-
-
+// fungsi hitung bmi
 function hitung() {
     
     let tinggi = document.getElementById("tinggi").value
     let berat = document.getElementById("berat").value
     let hasil = document.getElementById("hasil")
  
-
     if (tinggi === "") 
-        hasil.innerHTML = "Masukkan tinggi badan yang benar"
-    
+    hasil.innerHTML = "Masukkan tinggi badan yang benar"
+
     else if (berat === "") 
-        hasil.innerHTML = "Masukkan berat badan yang benar"
-    
+    hasil.innerHTML = "Masukkan berat badan yang benar"
+
     else {
-        let bmi = (berat / (tinggi /100)**2).toFixed(1)
- 
-        if (bmi < 18.5){
-            hasil.innerHTML = `Hasil BMI anda <span>${bmi}</span>, Anda Kekuarangan berat badan.`
-        }
-        else if (bmi >= 18.5 && bmi <= 24.9) {
-            hasil.innerHTML = `Hasil BMI anda <span>${bmi}</span>, Berat badan anda ideal.`
-        }
-        else hasil.innerHTML = `Hasil BMI anda <span>${bmi}</span>, Anda kelebihan berat badan.`
+    let bmi = (berat / (tinggi /100)**2).toFixed(1)
+    
+    if (bmi < 18.5){
+        hasil.innerHTML = `Hasil BMI anda <span>${bmi}</span>, Anda Kekuarangan berat badan.`
     }
+    else if (bmi >= 18.5 && bmi <= 24.9) {
+        hasil.innerHTML = `Hasil BMI anda <span>${bmi}</span>, Berat badan anda ideal.`
+    }
+    else hasil.innerHTML = `Hasil BMI anda <span>${bmi}</span>, Anda kelebihan berat badan.`
+}
 }
 
-
+// tombol hitung bmi
+let button = document.getElementById("krm-button")
+button.addEventListener("click", hitung)
 
 
 

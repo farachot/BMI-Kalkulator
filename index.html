@@ -4,28 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BMI Kalkulator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- card kalkulator-->
     <div id="kalkulator">
         <div class="form">
             <h2>Check Your BMI</h2>
             <p>Masukkan tinggi badan dan berat badan lalu cek hasilnya.</p>
+            <!-- input nilai tinggi-->
             <div class="form-element">
                 <label for="tinggi">Masukkan tinggi badan anda di bawah sini (cm)</label>
                 <input type="number" placeholder="170" id="tinggi">
             </div>
+            <!-- inout nilai berat -->
             <div class="form-element">
                 <label for="berat">Masukkan berat badan anda di bawah sini (kg)</label>
                 <input type="number" placeholder="60" id="berat">
             </div>
+            <!-- tombol hitung -->
             <div class="form-element">
                 <button id="krm-button">Hitung BMI</button>
             </div>
+            <!-- hasil -->
             <div class="form-element">
                 <div>
-                    <h4>Hasil :</h4>
                     <p id="hasil"></p>
                 </div>
             </div>
